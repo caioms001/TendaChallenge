@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				margin: 0;
+				background-color: black;
+			}
+			#sun{
+				background-color: yellow;
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				border-radius: 50%;
+			}
+
+			#orbit{
+				position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			width: 500px;
+    			height: 500px;
+    			margin-top: -250px;
+    			margin-left: -250px;
+    			-webkit-animation: spin-right 10s linear infinite;
+			}
+
+			#earth{
+				background-color: blue;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-left: -25px;
+    			margin-top: -25px;
+				position: absolute;
+    			top: 0;
+    			left: 50%;
+			}
+
+			@keyframes spin-right {
+  				100% {
+    				-webkit-transform: rotate(360deg);
+  				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sun"></div>
+		<div id="orbit">
+			<div id="earth"></div>
+		</div>
+	</body>
+</html>
