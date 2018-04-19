@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				margin: 0;
+				background-color: black;
+			}
+			#sun{
+				background-color: yellow;
+				width: 150px;
+				height: 150px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+				border-radius: 50%;
+			}
+
+			#earth-orbit{
+				position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			width: 350px;
+    			height: 350px;
+    			margin-top: -175.5px;
+    			margin-left: -175.5px;
+    			-webkit-animation: spin-right 10s linear infinite;
+			}
+
+			#earth{
+				background-color: blue;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-left: -25px;
+    			margin-top: -25px;
+				position: absolute;
+    			top: 0;
+    			left: 50%;
+			}
+
+			#moon-orbit{
+				position: absolute;
+    			top: 50%;
+    			left: 50%;
+    			width: 150px;
+    			height: 150px;
+    			margin-top: -75px;
+    			margin-left: -75px;
+    			-webkit-animation: spin-right 10s linear infinite;
+			}
+
+			#moon{
+				background-color: gray;
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				margin-left: -12.5px;
+    			margin-top: -12.5px;
+				position: absolute;
+    			top: 0;
+    			left: 50%;
+			}
+
+			@keyframes spin-right {
+  				100% {
+    				-webkit-transform: rotate(360deg);
+  				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sun"></div>
+		<div id="earth-orbit">
+			<div id="earth">
+				<div id="moon-orbit">
+					<div id="moon"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
