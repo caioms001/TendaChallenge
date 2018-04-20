@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+		<style>
+			body{
+				margin: 0;
+				background-color: #FFFFFF;
+				font-family: Ubuntu, sans-serif;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.header{
+				display: flex;
+				align-items: center;
+				margin: 15px 0 0 0;
+				padding: 0 24px;
+			}
+			.back{
+				width: 12px;
+				height: 12px;
+				border: solid 2px black;
+				border-top: 0;
+				border-right: 0;
+				transform: rotate(45deg);
+			}
+			.backWhite{
+				width: 12px;
+				height: 12px;
+				border: solid 2px white;
+				border-bottom: 0;
+				border-left: 0;
+				transform: rotate(45deg);
+			}
+			.sectionName{
+				text-align: center;
+				margin: auto;
+			}
+			.menu{
+				height: 65px;
+				display: flex;
+				justify-content: center;
+				align-items: flex-end;
+			}
+			.menuItens{
+				padding-bottom: 5px;
+				flex-grow: 1;
+				text-align: center;
+				border-bottom: solid 3px #E6E5E9;
+				color: #9997A2;
+				font-size: 12px;
+			}
+			#open{
+				color: #060F2F; 
+				border-color: #060F2F;
+			}
+			.issues{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-top: 35px; 
+			}
+			.issuesItens{
+				width: auto;
+				height: auto;
+  				margin: 8px 25px;
+  				padding: 12px 0px;
+				background-color: #F9FAF9;
+  				border-radius: 5px;
+  				box-shadow: 0px 2px 10px #DDDDDD;
+			}
+			.firstLine{
+				display: flex;
+				align-items: center;
+			}
+			.circle{
+				width: 8px;
+				height: 16px;
+				background-color: #F2BC26;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+			}
+			.circle.approved{
+				background-color: #67DA97;
+			}
+			.state{
+				margin: 0 0 1px 12px;
+				color: #F2BC26;
+				font-size: 12px;
+			}
+			.state.approved{
+				color: #67DA97;
+			}
+			.sector{
+				margin: 7px 0 0 20px;
+				color: #2283DD;
+				font-size: 12px;
+			}
+			.name{
+				margin: 7px 0 0 20px;
+				color: #323232;
+				font-weight: bold;
+			}
+			.object{
+				margin: 4px 0 0 20px;
+				color: #323232;
+				font-size: 14px;
+			}
+			.clerk{
+				margin: 10px 0 5px 20px;
+				color: #A1A2A1;
+				font-size: 12px;
+				font-style: italic;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="back"></div>
+			<div class="sectionName">Atendimento</div>
+			<div class="backWhite"></div>
+		</div>
+		<div class="menu">
+			<div class="menuItens" id="new">NOVAS</div>
+			<div class="menuItens" id="open">ABERTAS</div>
+			<div class="menuItens" id="my">MINHAS</div>
+		</div>
+		<div class="issues">
+			<div class="issuesItens">
+				<div class="firstLine">
+					<div class="circle"></div>
+					<div class="state">Aberto&ensp;•&ensp;3 dias atrás</div>
+				</div>
+				
+				<div class="sector">Financeiro</div>
+				<div class="name">Murilo Melo Vários Sobrenomes</div>
+				<div class="object">Segunda via do boleto</div>
+				<div class="clerk">Sem atendente</div>
+			</div>
+
+			<div class="issuesItens">
+				<div class="firstLine">
+					<div class="circle approved"></div>
+					<div class="state approved">Aguardando&ensp;•&ensp;poucos segundos atrás</div>
+				</div>
+				
+				<div class="sector">Extracurricular</div>
+				<div class="name">Murilo Melo Vários Sobrenomes</div>
+				<div class="object">Segunda via do boleto</div>
+				<div class="clerk">Sem atendente</div>
+			</div>
+
+			<div class="issuesItens">
+				<div class="firstLine">
+					<div class="circle"></div>
+					<div class="state">Novo&ensp;•&ensp;17h</div>
+				</div>
+				
+				<div class="sector">Cursos Extracurriculares</div>
+				<div class="name">Murilo Melo Vários Sobrenomes</div>
+				<div class="object">Segunda via do boleto</div>
+				<div class="clerk">Sem atendente</div>
+			</div>
+
+			<div class="issuesItens">
+				<div class="firstLine">
+					<div class="circle"></div>
+					<div class="state approved">Aguardando&ensp;•&ensp;17h</div>
+				</div>
+				
+				<div class="sector">Financeiro</div>
+				<div class="name">Murilo Melo Vários Sobrenomes</div>
+				<div class="object">Segunda via do boleto</div>
+				<div class="clerk">Sem atendente</div>
+			</div>
+		</div>
+	</body>
+</html>
